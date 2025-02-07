@@ -1,0 +1,13 @@
+The following CSS code uses a more appropriate and robust class selector that addresses the potential problems of using the invalid `type` attribute in the original code:
+
+```css
+.my-class {
+  color: blue;
+}
+
+.my-class.text-type {
+  color: red;
+}
+```
+
+This solution relies on a second class (`.text-type`) being added to the relevant HTML elements in addition to the `.my-class` class. The additional class will now accurately target the intended elements.  This is much more reliable and avoids the issues stemming from the invalid selector in the original code.
